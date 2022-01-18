@@ -3,7 +3,7 @@ node {
          checkout scm
      }
      stage('Build image') {
-         app = docker.build("34.132.155.133/admin/flask-example")
+         app = docker.build("34.132.155.133/admin/fastapi-sampleapp")
          
      }
      stage('Push image') {
@@ -15,7 +15,7 @@ node {
 }
 
 stage('Build image') {
-  app = docker.build("34.132.155.133/admin/flask-example")
+  app = docker.build("34.132.155.133/admin/fastapi-sampleapp")
 }
 
 stage('Push image') {
